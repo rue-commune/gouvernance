@@ -24,9 +24,11 @@ La durée de l’association est illimitée.
 
 ## Article 3 — Siège social
 
-Le siège social est fixé par décision du Conseil d’administration.
+Le siège social est fixé à Nantes (Loire-Atlantique).
 
-Le Conseil peut le transférer en tout lieu. Il en informe les membres et accomplit les formalités requises.
+L’adresse du siège social est fixée par décision du Conseil d’administration.
+
+Le Conseil d’administration peut transférer le siège social en tout lieu. Il est habilité à modifier en conséquence le présent article des statuts, sans que cette modification soit soumise à l’Assemblée générale. Il en informe les membres et accomplit les formalités requises.
 
 ---
 
