@@ -1,0 +1,26 @@
+name: Rebuild rue-commune.org
+
+# The website (rue-commune/web) publishes the statuts, RI and CA documents
+# from this repository. Trigger a Cloudflare Pages rebuild when they change.
+on:
+  push:
+    branches: [main]
+    paths:
+      - statuts.md
+      - reglement-interieur.md
+      - "CA/**"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages deploy hook
+        env:
+          HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "CF_PAGES_DEPLOY_HOOK secret not set; skipping."
+            exit 0
+          fi
+          curl -fsS -X POST "$HOOK"
